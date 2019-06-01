@@ -3,7 +3,10 @@
   /**
    * Colour palette
    */
-  --c-primary: hsl(190, 100%, 40%);
+  --c-primary:hsla(133, 65%, 56%, 1);
+  --c-darkbrown: #382F27;
+  --c-lightbrown:#76583E;
+  --c-lightyellow:#FFF4D7; 
 
   /**
    * Layout
@@ -13,9 +16,9 @@
   /**
    * Typography
    */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+  --t-primary: 'House-Script', 'sans-serif'; 
+  --t-secondary: 'Avenir', 'Arial', sans-serif;
+  --t-tertiary: 'Al Bayan',sans-serif;
 
   --t-headline: var(--t-primary);
   --t-subtitle: var(--t-primary);

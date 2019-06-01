@@ -1,0 +1,29 @@
+
+:root {
+  /**
+   * Colour palette
+   */
+  --c-primary:hsla(133, 65%, 56%, 1);
+  --c-darkbrown: #382F27;
+  --c-lightbrown:#76583E;
+  --c-lightyellow:#FFF4D7; 
+
+  /**
+   * Layout
+   */
+  --l-gutter: 1rem;
+
+  /**
+   * Typography
+   */
+  --t-primary: 'House-Script', 'sans-serif'; 
+  --t-secondary: 'Avenir', 'Arial', sans-serif;
+  --t-tertiary: 'Al Bayan',sans-serif;
+
+  --t-headline: var(--t-primary);
+  --t-subtitle: var(--t-primary);
+  --t-body: var(--t-secondary);
+  --t-code: var(--t-tertiary);
+}
+
+

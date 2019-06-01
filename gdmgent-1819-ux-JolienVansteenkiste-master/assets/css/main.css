@@ -1,0 +1,447 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/flex-grid.css');
+@import url('components/buttons.css');
+@import url('components/forms.css');
+
+/*header*/
+
+header {
+    height: 150px;
+    padding: 10px 137px 0px 137px;
+    background-color: var(--c-darkbrown);
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 238px;
+    height: 138px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a {
+    margin: 30px 17px 0px 17px;
+    color: var(--c-lightyellow);
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+#reserveren {
+    border: 1px solid var(--c-primary);
+    border-radius: 8px;
+    padding: 7px 5px;
+}
+
+.nav li a:hover {
+    color: var(--c-primary);
+}
+
+/*main*/
+main {
+    margin:0px;
+}
+
+#welkom {
+    padding: 0px 137px;
+    background-image: url(../../images/achtergrond.jpg);
+    position: relative;
+    top:-52px;
+    left:0px;
+    height:600px;
+
+}
+
+#welkom h1 {
+    color: var(--c-primary);
+    font-family: var(--t-headline);
+    font-size: 76px;
+    width: 592px;
+    position: relative;
+    top: 300px;
+    left:0px;
+}
+
+#welkom p {
+    color: var(--c-lightyellow);
+    font-family: var(--t-tertiary);
+    position: relative;
+    font-size:20px;
+    top: 260px;
+    left:0px;
+}
+
+
+
+.inhoud {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.inhoud p {
+    width: 518px;
+    border-right: 1px solid var(--c-darkbrown);
+    padding:45px;
+}
+
+.inhoud p:last-child {
+    border:none;
+}
+
+.sfeerbeeld {
+    min-width: 356px;
+    height: 241px;
+}
+
+
+
+#sfeerbeelden {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.containersfeerbeeld{
+    margin:10px;
+}
+
+.containersfeerbeeld h1{
+    font-size: 20px;
+    text-align: center;
+    color:var(--c-darkbrown);
+    font-weight: bold;
+}
+
+
+
+
+
+/*footer*/
+footer {
+    padding: 0px;
+}
+
+.footer {
+    background-color: var(--c-darkbrown);
+    height: 276px;
+    padding: 10px 137px 0px 137px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.footer h1 {
+    font-size: 20px;
+    color:var(--c-lightyellow);
+    font-weight: 100;
+    margin:0px;
+    margin-top:30px;
+}
+
+
+input {
+    margin:7px 10px 7px 0px;;
+    padding: 10px;
+    background-color: var(--c-darkbrown);
+    border: 1px solid var(--c-lightyellow);
+    border-radius: 8px;
+    width: 217px;
+    font-size:15px;
+    color: var(--c-lightyellow);
+}
+
+#formulier {
+
+    padding: 0px;
+}
+
+input:focus {
+    border: 1px solid var(--c-primary);
+    outline: none;
+    box-shadow: 0 0 5px var(--c-primary);
+}
+
+input:hover {
+    border: 1px solid var(--c-primary);
+}
+
+::placeholder {
+    color: var(--c-lightyellow);
+    font-size:13px;
+}
+
+
+#submit {
+    color: var(--c-darkbrown);
+    padding: 5px;
+    border-radius: 10px;
+    width:217px;
+    height: 37px;
+    background-color: var(--c-primary);
+    font-size: 20px;
+    border: none;
+    text-align: center;
+}
+
+#submit:focus {
+    box-shadow: 3px 3px 5px grey;
+    background-color: rgb(52, 163, 76);
+    
+}
+
+#submit:hover {
+    background-color: rgb(52, 163, 76);
+}
+
+#follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#follow i {
+    color:var(--c-primary);
+    font-size:50px;
+    padding:10px;
+}
+
+#follow i:hover {
+    color:var(--c-lightyellow);
+}
+div button {
+    background-color: var(--c-darkbrown);
+    border:none;
+}
+
+#contact div i{
+    color: var(--c-primary);
+    font-size:20px;
+
+}
+
+#contact div p {
+    color:var(--c-lightyellow);
+    font-size: 20px;
+    padding-left: 10px;
+    margin:10px;
+}
+
+#contact div p:hover {
+    text-decoration-line: underline;
+}
+
+#contact div {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+#footerextra {
+    background-color: black;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom:0px;
+}
+
+#footerextra ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#footerextra li:nth-last-child(1) {
+    border: none;
+    padding-right: 30px;
+}
+
+#footerextra li {
+    color: var(--c-lightyellow);
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0 10px;
+    border-right: 1px solid var(--c-lightyellow);
+}
+
+#footerextra li:hover {
+    color: var(--c-lightyellow);
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0 10px;
+    border-right: 1px solid var(--c-lightyellow);
+    text-decoration-line: underline;
+    text-decoration-color: var(--c-lightyellow);
+}
+
+#footerextra li:nth-last-child(1):hover {
+    border: none;
+    padding-right: 30px;
+}
+
+
+@media (min-width:576px) and (max-width:768px){
+    header {
+        padding:30px 10px 0px 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 172px;
+        height: 100px;
+    }
+
+    .nav li a {
+        font-size:14px;
+        margin:10px;
+
+    }
+    .inhoud{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .inhoud p{
+        border-bottom: 1px solid var(--c-darkbrown);
+        border-right: none;
+        font-size:14px;
+        padding:10px;
+        width: auto;
+    }
+
+    #sfeerbeelden {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        padding: 30px 40px;
+    }
+    .footer h1 {
+        font-size: 12px;
+    }
+
+    input {
+        font-size:11px;
+        width:150px;
+
+    }
+
+    #follow i{
+        font-size: 30px;
+        padding:7px;
+    }
+
+    #contact div i {
+        font-size:14px;
+    }
+    #contact div p {
+        font-size:16px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding:30px 10px 0px 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 103px;
+        height: 60px;
+    }
+
+    .nav li a {
+        font-size:12px;
+        margin:3px;
+
+    }
+    #welkom {
+        padding: 0px 10px;
+
+    }
+    #welkom h1{
+        font-size: 42px;
+        width:340px;
+    }
+    #welkom p{
+        font-size:16px;
+        position: relative;
+        top: 280px;
+        left:0px;
+    }
+
+    .inhoud{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .inhoud p{
+        border-bottom: 1px solid var(--c-darkbrown);
+        border-right: none;
+        font-size:14px;
+        padding:10px;
+        width: auto;
+    }
+
+    #sfeerbeelden {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .footer {
+        padding:10px 10px 0px 10px;
+    }
+    .footer h1 {
+        font-size: 12px;
+    }
+
+    input {
+        font-size:11px;
+        width:150px;
+
+    }
+    #formulier {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #follow i{
+        font-size: 30px;
+        padding:7px;
+    }
+
+    #contact div i {
+        font-size:14px;
+    }
+    #contact div p {
+        font-size:16px;
+        padding-left: 3px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .containersfeerbeeld{
+        margin:auto;
+    }
+}
+
